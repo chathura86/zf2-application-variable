@@ -57,7 +57,7 @@ class Module implements AutoloaderProviderInterface
 	{
 		/* @var $app \Zend\Mvc\Application */
 		$app = $e->getApplication();
-		$app->getServiceManager()->setService('AppVariable', new \AppVariableBundle\AppVariableBundle($this->getDriverConfig()));
+		$app->getServiceManager()->setService('AppVariable', new \AppVariableBundle\VariableManager($this->getDriverConfig()));
 	}
 
 	public function getDriverConfig()
