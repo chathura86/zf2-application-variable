@@ -8,7 +8,7 @@ class VariableManager
 	private $appVars = array();
 	private $driver;
 
-	private function __construct($config)
+	public function __construct($config)
 	{
 		//starting application
 		switch (strtolower($config['driver'])) {

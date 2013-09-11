@@ -9,7 +9,7 @@ interface DriverInterface {
 	 *
 	 * @return array
 	 */
-    abstract public function load($shmKey);
+    public function load($shmKey);
 
 	/**
 	 *
@@ -18,5 +18,5 @@ interface DriverInterface {
 	 *
 	 * @return bool
 	 */
-	abstract public function save($shmKey, $appVars);
+	public function save($shmKey, $appVars);
 }
