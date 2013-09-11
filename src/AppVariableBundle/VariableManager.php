@@ -2,7 +2,7 @@
 
 namespace AppVariableBundle;
 
-class VariableManager implements AutoloaderProviderInterface
+class VariableManager
 {
 
 	private $appVars = array();
