@@ -1,0 +1,26 @@
+{
+    "name": "chathura86/zf2-application-variable",
+    "description": "Zend Framework 2 module providing application level variables",
+    "license": "MIT",
+    "keywords": [
+        "application variables",
+		"app variables",
+        "zf2"
+    ],
+    "homepage": "https://github.com/chathura86/zf2-application-variable",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },
+    "require-dev": {
+        "zendframework/zendframework": "dev-master"
+    },
+    "autoload": {
+		"psr-0": {
+            "AppVariableBundle\\": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}
