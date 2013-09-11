@@ -36,7 +36,7 @@ class File implements DriverInterface
 		
 	public function load($shmKey)
 	{
-		$path = ROOT . $this->path . DIRECTORY_SEPARATOR . $shmKey;
+		$path = $this->path . DIRECTORY_SEPARATOR . $shmKey;
 		$appVars = array();
 
 		if (file_exists($path))
@@ -47,7 +47,7 @@ class File implements DriverInterface
 
 	public function save($shmKey, $appVars)
 	{
-		$path = ROOT . $this->path . DIRECTORY_SEPARATOR . $shmKey;
+		$path = $this->path . DIRECTORY_SEPARATOR . $shmKey;
 		$result = file_put_contents($path, serialize($appVars));
 		return ($result !== false);
 	}
