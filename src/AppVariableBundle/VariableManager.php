@@ -62,12 +62,12 @@ class VariableManager
 	 * 
 	 * @param string $name
 	 * @return mixed
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	public function __get($name)
 	{
 		if (!isset($this->appVars[$name]))
-			throw new Exception('Undefined application variable');
+			throw new \Exception('Undefined application variable');
 
 		return $this->appVars[$name];
 	}
